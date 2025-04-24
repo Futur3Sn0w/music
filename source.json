@@ -1,0 +1,29 @@
+{
+    "id": "musicProjects",
+    "name": "Bounce",
+    "subtitle": "Songs and mixes",
+    "iconClass": "fa-play",
+    "productions": [
+        {
+            "id": "betogether",
+            "title": "Be Together",
+            "lastUpdate": "Jun. 2020",
+            "dataOpen": "https://soundcloud.com/futur3sn0w/be-together-session-mix",
+            "description": "Dedicated to my best friend (and sidekick) Ari 😊"
+        },
+        {
+            "id": "ambienceep",
+            "title": "Ambience EP",
+            "lastUpdate": "Sept. 2019",
+            "dataOpen": "https://www.youtube.com/playlist?list=OLAK5uy_mUPnf6khcLu6wmF9EmzSD2h7FpRpOpkXQ",
+            "description": "My debut, 4 track EP including 'Night Drive', 'After Party', and 'Aurorian Storm'."
+        },
+        {
+            "id": "onemorething",
+            "title": "One More Thing",
+            "lastUpdate": "Sept. 2019",
+            "dataOpen": "https://soundcloud.com/futur3sn0w/one-more-thing",
+            "description": "Created as a tribute to the late Steve Jobs, an incredible visionary and innovator."
+        }
+    ]
+}

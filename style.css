@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    display: flex;
+}
+
+.half {
+    width: 50vw;
+    height: 100vh;
+
+    display: flex;
+    position: relative;
+
+    &.left {
+        background-color: var(--root-back);
+    }
+
+    &.right {
+        background-color: var(--root-back-b);
+    }
+}
+
+.music-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 15px;
+
+    width: 100%;
+    height: 100%;
+
+    & .music-entry {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 200px;
+
+        padding: 10px;
+
+        border-radius: 15px;
+        background-color: var(--root-back);
+        box-shadow: 0 10px 15px #00000033;
+
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            z-index: 0;
+
+            opacity: .1;
+
+            box-sizing: border-box;
+            border: 1px solid var(--root-text);
+            border-radius: inherit;
+        }
+
+        &>*:not(.backImg) {
+            position: relative;
+            z-index: 10;
+        }
+
+        & .albArt {
+            height: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+
+            margin-right: auto;
+        }
+
+        & .backImg {
+            width: 120%;
+            height: 120%;
+
+            object-fit: cover;
+            object-position: center;
+
+            mask-image: linear-gradient(to bottom, transparent, black);
+            filter: blur(10px) saturate(2);
+            opacity: .33;
+
+            position: absolute;
+            z-index: 0;
+        }
+    }
+}
+
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px #00000015;
+    overflow: hidden;
+
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+
+    border-radius: 12px;
+
+    transition: .3s ease;
+
+    user-select: none;
+    cursor: pointer;
+
+    margin-left: auto;
+    margin-top: auto;
+
+    position: relative;
+    z-index: 20;
+
+    &:hover {
+        box-shadow: 0 10px 15px #00000033;
+        background-color: rgb(207, 241, 195);
+        border-radius: 100px;
+
+        & p {
+            font-weight: 600;
+            opacity: 1;
+            color: black !important;
+        }
+
+        &::after {
+            opacity: .15;
+        }
+    }
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        z-index: 0;
+
+        opacity: .05;
+        transition: .2s;
+        background: linear-gradient(to bottom, transparent, var(--root-text));
+    }
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        z-index: 0;
+
+        opacity: .1;
+
+        box-sizing: border-box;
+        border: 1px solid var(--root-text);
+        border-radius: inherit;
+    }
+
+    & p {
+        position: relative;
+        z-index: 10;
+
+        transition: .2s;
+
+        color: var(--root-text);
+
+        opacity: .75;
+    }
+}
