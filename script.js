@@ -23,8 +23,7 @@ $(document).ready(function () {
             const div = $('<div></div>', {
                 class: 'music-entry',
                 'title': project.title,
-                'data-description': project.description,
-                'data-date': project.lastUpdate
+                'data-description': project.description
             });
 
             if (imageFound) {
@@ -39,6 +38,12 @@ $(document).ready(function () {
                     alt: project.title
                 }).appendTo(div);
             }
+
+            $('<span>', {
+                class: "prodTitle",
+                'data-date': project.lastUpdate,
+                text: project.title
+            }).appendTo(div);
 
             if (project.dataOpen) {
                 $('<button></button>', {
