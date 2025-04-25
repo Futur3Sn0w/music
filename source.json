@@ -9,7 +9,7 @@
             "title": "Be Together",
             "lastUpdate": "Jun. 2020",
             "dataOpen": "https://soundcloud.com/futur3sn0w/be-together-session-mix",
-            "description": "Dedicated to my best friend (and sidekick) Ari 😊"
+            "description": "Dedicated to Ari 😊"
         },
         {
             "id": "ambienceep",
@@ -24,6 +24,29 @@
             "lastUpdate": "Sept. 2019",
             "dataOpen": "https://soundcloud.com/futur3sn0w/one-more-thing",
             "description": "Created as a tribute to the late Steve Jobs, an incredible visionary and innovator."
+        }
+    ],
+    "sets": [
+        {
+            "id": "snowhouse",
+            "title": "The Sn0wHous3 Mix",
+            "lastUpdate": "Jun. 2020",
+            "dataOpen": "",
+            "description": "My debut DJ set, where I first experimented with the simplest of transitions between songs."
+        },
+        {
+            "id": "blizzardmix",
+            "title": "The Blizzard Mix",
+            "lastUpdate": "Dec. 2023",
+            "dataOpen": "",
+            "description": "A chill-house mix inspired by HANA and Durante."
+        },
+        {
+            "id": "liftoffmix",
+            "title": "The Liftoff Mix",
+            "lastUpdate": "Feb. 2025",
+            "dataOpen": "",
+            "description": "A deep-house inspired mix with a focus on songs that have unique sounds for the house space."
         }
     ]
 }
